@@ -216,7 +216,7 @@ import Foundation
    }
 
  */
-import Foundation
+//import Foundation
 
 
 struct CoinModel: Identifiable, Codable {

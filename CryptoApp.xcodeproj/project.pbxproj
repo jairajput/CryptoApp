@@ -19,6 +19,7 @@
 		D85656EA2AA8942000F8F256 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85656E92AA8942000F8F256 /* CoinRowView.swift */; };
 		D85656EC2AA8971D00F8F256 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85656EB2AA8971D00F8F256 /* PreviewProvider.swift */; };
 		D85656EE2AA8BD9C00F8F256 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85656ED2AA8BD9C00F8F256 /* Double.swift */; };
+		D85656F02AA9999600F8F256 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85656EF2AA9999600F8F256 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		D85656E92AA8942000F8F256 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		D85656EB2AA8971D00F8F256 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		D85656ED2AA8BD9C00F8F256 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		D85656EF2AA9999600F8F256 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		D82C4A692AA3B52B002E6F7F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D85656EF2AA9999600F8F256 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D85656EA2AA8942000F8F256 /* CoinRowView.swift in Sources */,
+				D85656F02AA9999600F8F256 /* HomeViewModel.swift in Sources */,
 				D82C4A572AA33A51002E6F7F /* ContentView.swift in Sources */,
 				D82C4A6C2AA3B559002E6F7F /* HomeView.swift in Sources */,
 				D82C4A552AA33A51002E6F7F /* CryptoAppApp.swift in Sources */,
