@@ -23,11 +23,29 @@ class HomeViewModel : ObservableObject {
       addSubscriber()
         }
     func addSubscriber() {
-        dataServivice.$allCoins
-            .sink { [weak self](returnedCoins) in
+        
+        //add Subscriber update the coin
+        $searchText
+            .combineLatest(dataServivice.$allCoins)
+        //publish after specific time
+            .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
+       
+            .map(filterCoins)
+        
+            .sink{[weak self] (returnedCoins) in
                 self?.allCoins = returnedCoins
             }
             .store(in: &cancellables)
     }
-    
+    private func filterCoins(text: String, coins:[CoinModel]) -> [CoinModel]{
+        guard !text.isEmpty else{
+            return coins
+        }
+        let lowercasedText = text.lowercased()
+        return coins.filter{(coin)->Bool in
+            return coin.name.lowercased().contains(lowercasedText) ||
+            coin.symbol.lowercased().contains(lowercasedText) ||
+            coin.id.lowercased().contains(lowercasedText)
+        }
+    }
 }
