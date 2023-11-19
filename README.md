@@ -1,4 +1,4 @@
-<img width="350" alt="Screenshot 2023-11-19 at 10 54 28 PM" src="https://github.com/jairajput/CryptoApp/assets/80166407/ae479d27-addf-4227-979c-d7c470ea2d75"><img width="321" alt="Screenshot 2023-11-19 at 10 53 20 PM" src="https://github.com/jairajput/CryptoApp/assets/80166407/55383070-7b8f-4cd8-8894-4fbc96971503">Crypto Tracker App is a mobile application that allows users to track and monitor cryptocurrency prices, portfolios, and market trends. Stay up to date with the latest cryptocurrency information right at your fingertips.
+Crypto Tracker App is a mobile application that allows users to track and monitor cryptocurrency prices, portfolios, and market trends. Stay up to date with the latest cryptocurrency information right at your fingertips.
 
 <img width="321" alt="Screenshot 2023-11-19 at 10 53 20 PM" src="https://github.com/jairajput/CryptoApp/assets/80166407/8409bff4-3f7e-4db9-943a-79515a388428">
 <img width="331" alt="Screenshot 2023-11-19 at 10 53 34 PM" src="https://github.com/jairajput/CryptoApp/assets/80166407/75208461-a539-4b7e-9c6b-1286d8f6c5fd">
