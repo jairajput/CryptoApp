@@ -30,7 +30,7 @@ class PortfolioDataService {
     
     func updatePortfolio(coin: CoinModel, amount: Double) {
         // check if coin is already in portfolio
-        if let entity = savedEntities.first(where: { $0.coinId == coin.id }) {
+        if let entity = savedEntities.first(where: { $0.coinID == coin.id }) {
             if amount > 0 {
                 update(entity: entity, amount: amount)
             } else {
@@ -54,7 +54,7 @@ class PortfolioDataService {
     
     private func add(coin: CoinModel, amount: Double) {
         let entity = PortfolioEntity(context: container.viewContext)
-        entity.coinId = coin.id
+        entity.coinID = coin.id
         entity.amount = amount
         applyChanges()
     }

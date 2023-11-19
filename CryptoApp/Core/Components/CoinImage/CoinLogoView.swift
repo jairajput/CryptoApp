@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct CoinLogoView: View {
+    
     let coin: CoinModel
+    
     var body: some View {
-        VStack{
+        VStack {
             CoinImageView(coin: coin)
-                .frame(width: 50,height: 50)
+                .frame(width: 50, height: 50)
             Text(coin.symbol.uppercased())
                 .font(.headline)
                 .foregroundColor(Color.theme.accent)
@@ -21,7 +23,7 @@ struct CoinLogoView: View {
             Text(coin.name)
                 .font(.caption)
                 .foregroundColor(Color.theme.secondaryText)
-                .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+                .lineLimit(2)
                 .minimumScaleFactor(0.5)
                 .multilineTextAlignment(.center)
         }
