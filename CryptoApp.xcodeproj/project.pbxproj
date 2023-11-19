@@ -39,6 +39,7 @@
 		D8A442E52B0A4C71001307A6 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A442E42B0A4C71001307A6 /* HapticManager.swift */; };
 		D8A442E72B0A4D55001307A6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A442E62B0A4D55001307A6 /* Date.swift */; };
 		D8A442E92B0A4D73001307A6 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A442E82B0A4D73001307A6 /* String.swift */; };
+		D8A442EB2B0A4E9A001307A6 /* CoinDetailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A442EA2B0A4E9A001307A6 /* CoinDetailDataService.swift */; };
 		D8FB2CC52AAF3A96004DE75D /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB2CC42AAF3A96004DE75D /* SearchBarView.swift */; };
 		D8FB2CC72AAF457A004DE75D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB2CC62AAF457A004DE75D /* UIApplication.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,7 @@
 		D8A442E42B0A4C71001307A6 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		D8A442E62B0A4D55001307A6 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		D8A442E82B0A4D73001307A6 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		D8A442EA2B0A4E9A001307A6 /* CoinDetailDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailDataService.swift; sourceTree = "<group>"; };
 		D8FB2CC42AAF3A96004DE75D /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		D8FB2CC62AAF457A004DE75D /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,6 +223,7 @@
 				D85656FA2AAA344500F8F256 /* CoinImageService.swift */,
 				D832E9F52ABF1F1A0011E837 /* MarketDataService.swift */,
 				D8A442E22B09E97F001307A6 /* PortfolioDataService.swift */,
+				D8A442EA2B0A4E9A001307A6 /* CoinDetailDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				D85656EE2AA8BD9C00F8F256 /* Double.swift in Sources */,
 				D8A442E72B0A4D55001307A6 /* Date.swift in Sources */,
 				D85656FB2AAA344500F8F256 /* CoinImageService.swift in Sources */,
+				D8A442EB2B0A4E9A001307A6 /* CoinDetailDataService.swift in Sources */,
 				D85656E82AA78AF500F8F256 /* CoinModel.swift in Sources */,
 				D8A442E92B0A4D73001307A6 /* String.swift in Sources */,
 				D8A442E32B09E97F001307A6 /* PortfolioDataService.swift in Sources */,

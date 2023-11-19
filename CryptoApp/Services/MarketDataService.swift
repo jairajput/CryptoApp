@@ -7,30 +7,26 @@
 
 import Foundation
 import Combine
-class MarketDataService{
-    @Published var marketData:MarketDataModel? = nil
-    var marketDataSubscription : AnyCancellable?
+
+class MarketDataService {
+    
+    @Published var marketData: MarketDataModel? = nil
+    var marketDataSubscription: AnyCancellable?
     
     init() {
-        getData ()
-        
+        getData()
     }
-    private func getData() {
-        guard let url =  URL(string:
-                                "https://api.coingecko.com/api/v3/global"
-        ) else
-        {return}
+    
+    func getData() {
+        guard let url = URL(string: "https://api.coingecko.com/api/v3/global") else { return }
         
-        
-        marketDataSubscription =  NetworkingManager.download(url: url)
+        marketDataSubscription = NetworkingManager.download(url: url)
             .decode(type: GlobalData.self, decoder: JSONDecoder())
-        
-            .sink(receiveCompletion: NetworkingManager.handleCompletition, receiveValue: { [weak self] (returnedGlobalData) in
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: NetworkingManager.handleCompletion, receiveValue: { [weak self] (returnedGlobalData) in
                 self?.marketData = returnedGlobalData.data
                 self?.marketDataSubscription?.cancel()
             })
-           
-        
-        
     }
+    
 }

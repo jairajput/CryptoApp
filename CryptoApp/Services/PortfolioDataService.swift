@@ -9,14 +9,14 @@ import Foundation
 import CoreData
 
 class PortfolioDataService {
+    
     private let container: NSPersistentContainer
-    private let containerName :String = "PortfolioContainer"
-    private let entityName :String = "PortfolioEntity"
+    private let containerName: String = "PortfolioContainer"
+    private let entityName: String = "PortfolioEntity"
     
+    @Published var savedEntities: [PortfolioEntity] = []
     
-    @Published var savedEntities:[PortfolioEntity] = []
-    
-        init() {
+    init() {
         container = NSPersistentContainer(name: containerName)
         container.loadPersistentStores { (_, error) in
             if let error = error {
@@ -26,11 +26,11 @@ class PortfolioDataService {
         }
     }
     
-    // PUBLIC
+    // MARK: PUBLIC
     
     func updatePortfolio(coin: CoinModel, amount: Double) {
         // check if coin is already in portfolio
-        if let entity = savedEntities.first(where: {$0.coinId ==  coin.id}) {
+        if let entity = savedEntities.first(where: { $0.coinId == coin.id }) {
             if amount > 0 {
                 update(entity: entity, amount: amount)
             } else {
@@ -41,7 +41,7 @@ class PortfolioDataService {
         }
     }
     
-    //  PRIVATE
+    // MARK: PRIVATE
     
     private func getPortfolio() {
         let request = NSFetchRequest<PortfolioEntity>(entityName: entityName)
