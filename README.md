@@ -3,7 +3,6 @@ Crypto Tracker App is a mobile application that allows users to track and monito
 
 
 
-
 ![Simulator Screenshot - iPhone 15 Pro - 2023-11-19 at 22 43 27](https://github.com/jairajput/CryptoApp/assets/80166407/83a198c7-923c-4f87-87c7-fea949d000eb)
 ![Simulator Screenshot - iPhone 15 Pro - 2023-11-19 at 22 43 36](https://github.com/jairajput/CryptoApp/assets/80166407/67a2b3d8-9a63-489c-acc2-4119963f8b3e)
 
