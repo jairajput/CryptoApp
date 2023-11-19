@@ -3,8 +3,8 @@ Crypto Tracker App is a mobile application that allows users to track and monito
 <img width="321" alt="Screenshot 2023-11-19 at 10 53 20 PM" src="https://github.com/jairajput/CryptoApp/assets/80166407/8409bff4-3f7e-4db9-943a-79515a388428">
 <img width="331" alt="Screenshot 2023-11-19 at 10 53 34 PM" src="https://github.com/jairajput/CryptoApp/assets/80166407/75208461-a539-4b7e-9c6b-1286d8f6c5fd">
 <img width="331" alt="Screenshot 2023-11-19 at 10 54 08 PM" src="https://github.com/jairajput/CryptoApp/assets/80166407/66bcb4f3-bf3c-448e-9e44-b29187363ff0">
-<img ![Uploading Screenshot 2023-11-19 at 10.54.28 PM.png…]()
-width="344" alt="Screenshot 2023-11-19 at 10 54 21 PM" src="https://github.com/jairajput/CryptoApp/assets/80166407/b62df9ca-709e-410a-9a2d-0ae6171b2409">
+<img width="350" alt="Screenshot 2023-11-19 at 10 54 28 PM" src="https://github.com/jairajput/CryptoApp/assets/80166407/2e39c080-313b-42ba-9e5e-582a12368e13">
+
 
 
 
