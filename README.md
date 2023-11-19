@@ -1,12 +1,11 @@
 Crypto Tracker App is a mobile application that allows users to track and monitor cryptocurrency prices, portfolios, and market trends. Stay up to date with the latest cryptocurrency information right at your fingertips.
 
-![Uploading Simulator Screenshot - iPhone 15 Pro - 2023-11-19 at 22.43.27.png…]()
-
-
-![Uploading Simulator Screenshot - iPhone 15 Pro - 2023-11-19 at 22.43.36.png…]()
 
 
 
+
+![Simulator Screenshot - iPhone 15 Pro - 2023-11-19 at 22 43 27](https://github.com/jairajput/CryptoApp/assets/80166407/83a198c7-923c-4f87-87c7-fea949d000eb)
+![Simulator Screenshot - iPhone 15 Pro - 2023-11-19 at 22 43 36](https://github.com/jairajput/CryptoApp/assets/80166407/67a2b3d8-9a63-489c-acc2-4119963f8b3e)
 
 
 
