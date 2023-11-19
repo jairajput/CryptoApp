@@ -44,6 +44,7 @@
 		D8A442F42B0A5163001307A6 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A442F32B0A5163001307A6 /* DetailViewModel.swift */; };
 		D8A442F62B0A5185001307A6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A442F52B0A5185001307A6 /* DetailView.swift */; };
 		D8A442F82B0A5193001307A6 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A442F72B0A5193001307A6 /* ChartView.swift */; };
+		D8A442FD2B0A52A8001307A6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A442FC2B0A52A8001307A6 /* SettingsView.swift */; };
 		D8FB2CC52AAF3A96004DE75D /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB2CC42AAF3A96004DE75D /* SearchBarView.swift */; };
 		D8FB2CC72AAF457A004DE75D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB2CC62AAF457A004DE75D /* UIApplication.swift */; };
 /* End PBXBuildFile section */
@@ -87,6 +88,7 @@
 		D8A442F32B0A5163001307A6 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		D8A442F52B0A5185001307A6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		D8A442F72B0A5193001307A6 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		D8A442FC2B0A52A8001307A6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D8FB2CC42AAF3A96004DE75D /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		D8FB2CC62AAF457A004DE75D /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +160,7 @@
 		D82C4A672AA3B517002E6F7F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D8A442F92B0A51FD001307A6 /* Setting */,
 				D8A442EE2B0A5123001307A6 /* Detail */,
 				D82C4A6E2AA3B70F002E6F7F /* Components */,
 				D82C4A682AA3B520002E6F7F /* Home */,
@@ -284,6 +287,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D8A442F92B0A51FD001307A6 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				D8A442FC2B0A52A8001307A6 /* SettingsView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -391,6 +402,7 @@
 				D85656E82AA78AF500F8F256 /* CoinModel.swift in Sources */,
 				D8A442E92B0A4D73001307A6 /* String.swift in Sources */,
 				D8A442E32B09E97F001307A6 /* PortfolioDataService.swift in Sources */,
+				D8A442FD2B0A52A8001307A6 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

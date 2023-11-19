@@ -8,21 +8,36 @@
 import SwiftUI
 
 @main
-struct CryptoAppApp: App {
-    @StateObject private var vm = HomeViewModel()
+struct SwiftfulCryptoApp: App {
     
-    init(){
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor:UIColor(Color.theme.accent)]
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor:UIColor(Color.theme.accent)]
-
+    @StateObject private var vm = HomeViewModel()
+    @State private var showContentView: Bool = true
+    
+    init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor : UIColor(Color.theme.accent)]
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor : UIColor(Color.theme.accent)]
+        UINavigationBar.appearance().tintColor = UIColor(Color.theme.accent)
+        UITableView.appearance().backgroundColor = UIColor.clear
     }
+    
     var body: some Scene {
-        WindowGroup{
-            NavigationView{
-                HomeView()
-                    .navigationBarHidden(true)
+        WindowGroup {
+            ZStack {
+                NavigationView {
+                    HomeView()
+                        .navigationBarHidden(true)
+                }
+                .navigationViewStyle(StackNavigationViewStyle())
+                .environmentObject(vm)
+
+                ZStack {
+                    if showContentView {
+                        ContentView(showContentView: $showContentView)
+                            .transition(.move(edge: .leading))
+                    }
+                }
+                .zIndex(2.0)
             }
-            .environmentObject(vm)
         }
     }
 }
