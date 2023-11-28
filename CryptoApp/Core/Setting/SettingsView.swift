@@ -8,10 +8,36 @@
 import SwiftUI
 
 struct SettingsView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    @State private var username: String = ""
+        @State private var email: String = ""
+        @State private var notificationsEnabled: Bool = false
+
+        var body: some View {
+            NavigationView {
+                Form {
+                    Section(header: Text("User Information")) {
+                        TextField("Username", text: $username)
+                        TextField("Email", text: $email)
+                    }
+
+                    Section(header: Text("Preferences")) {
+                        Toggle(isOn: $notificationsEnabled) {
+                            Text("Enable Notifications")
+                        }
+                    }
+
+                    Section {
+                        Button("Save Changes") {
+                            // Add action to save changes
+                        }
+                    }
+                }
+                .navigationBarTitle("Settings")
+            }
+        }
     }
-}
+
+
 
 #Preview {
     SettingsView()
