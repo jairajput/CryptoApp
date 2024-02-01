@@ -24,7 +24,7 @@ struct SwiftfulCryptoApp: App {
         WindowGroup {
             ZStack {
                 NavigationView {
-                    HomeView()
+                    mainTabView()
                         .navigationBarHidden(true)
                 }
                 .navigationViewStyle(StackNavigationViewStyle())
