@@ -16,7 +16,8 @@ struct mainTabView: View {
                             Text("Home")
                         }
 
-                    NewsView()
+            ArticleListView(articles: Article.previewData)
+
                         .tabItem {
                             Image(systemName: "newspaper.fill")
                             Text("News")

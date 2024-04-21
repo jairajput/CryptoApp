@@ -17,6 +17,7 @@ struct HomeView: View {
     @State private var showDetailView: Bool = false
     
     var body: some View {
+        
         ZStack {
             // background layer
             Color.theme.background
@@ -28,9 +29,9 @@ struct HomeView: View {
             
             // content layer
             VStack {
+                SearchBarView(searchText: $vm.searchText)
                 homeHeader
                 HomeStatsView(showPortfolio: $showPortfolio)
-                SearchBarView(searchText: $vm.searchText)
                 columnTitles
                 
                 if !showPortfolio {
