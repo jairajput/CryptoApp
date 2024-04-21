@@ -15,8 +15,7 @@ struct ArticleRowView: View {
             content
                 .overlay(
                     content
-                        .blur(radius: 8)
-                        .opacity(0.8)
+                    .opacity(0.8)
                 )
         }
     }
@@ -35,7 +34,6 @@ struct ArticleRowView: View {
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .modifier(NeonEffect())
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                 case .failure:
                     Image(systemName: "photo")

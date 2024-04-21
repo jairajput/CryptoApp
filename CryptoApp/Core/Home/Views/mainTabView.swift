@@ -22,15 +22,22 @@ struct mainTabView: View {
                             Image(systemName: "newspaper.fill")
                             Text("News")
                         }
+            PortfolioView()
+                .tabItem {
+                    Image(systemName: "wallet.pass.fill")
+                    Text("PortFolio")
+                }
+
 
                     UserView()
                         .tabItem {
                             Image(systemName: "person.fill")
                             Text("User")
                         }
+            }
                 }
             }
-        }
+        
     
 
 #Preview {
